@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dream Home Real Estate</title>
+</head>
+<body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="./images/dream-homes-logo.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Services
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+            <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+            </button>
+        </div>
+    </header>
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero-229">
+        <div class="cs-container">
+            <div class="cs-flex-group">
+                <span class="cs-topper">We are offering the</span>
+                <h1 class="cs-title">Best Real Estate Deals</h1>
+                <p class="cs-text">
+                    Find Your Dream Home
+                </p>
+                <a href="" class="cs-button-solid">Explore More</a>
+                <a href="" class="cs-button-transparent">
+                    <img class="cs-img" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg" alt="play icon" width="17" height="17">
+                    Learn More
+                </a>
+            </div>
+        </div>
+
+        <!-- Background Image -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1558036117-15d82a90b9b1?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1558036117-15d82a90b9b1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1558036117-15d82a90b9b1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="real estate hero" width="2400" height="1600" aria-hidden="true">
+        </picture>                
+    </section>
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery-404">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">Listings</span>
+                    <h2 class="cs-title">Featured Listings</h2>
+                </div>
+                <div class="cs-button-group">
+                    <button class="cs-button" data-filter="one">
+                        All
+                    </button>
+                    <button class="cs-button" data-filter="two">
+                        Luxury
+                    </button>
+                    <button class="cs-button" data-filter="three">
+                        Suburban
+                    </button>
+                    <button class="cs-button" data-filter="four">
+                        City
+                    </button>
+                    <button class="cs-button" data-filter="five">
+                        Country
+                    </button>
+                </div>
+            </div>
+            <div class="cs-gallery-wrapper">
+                <!--Gallery 1-->
+            <div class="cs-gallery" data-category="one">
+                <!--Picture 1-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdXNlfGVufDB8MHwwfHx8Mg%3D%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdXNlfGVufDB8MHwwfHx8Mg%3D%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdXNlfGVufDB8MHwwfHx8Mg%3D%3D" alt="gallery" width="630" height="400">
+                </picture>
+                <!--Picture 2-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1611602132416-da2045990f76?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG91c2V8ZW58MHwxfDB8fHwy">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1611602132416-da2045990f76?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG91c2V8ZW58MHwxfDB8fHwy">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1611602132416-da2045990f76?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG91c2V8ZW58MHwxfDB8fHwy" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 3-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1579297206620-c410c4af42e4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdXNlfGVufDB8MXwwfHx8Mg%3D%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1579297206620-c410c4af42e4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdXNlfGVufDB8MXwwfHx8Mg%3D%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1579297206620-c410c4af42e4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdXNlfGVufDB8MXwwfHx8Mg%3D%3D" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 4-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1517736996303-4eec4a66bb17?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aG91c2UlMjBjaXR5fGVufDB8MXwwfHx8Mg%3D%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1517736996303-4eec4a66bb17?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aG91c2UlMjBjaXR5fGVufDB8MXwwfHx8Mg%3D%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1517736996303-4eec4a66bb17?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aG91c2UlMjBjaXR5fGVufDB8MXwwfHx8Mg%3D%3D" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 5-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1564102590211-99ad647924f8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdXNlJTIwY2l0eXxlbnwwfDF8MHx8fDI%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1564102590211-99ad647924f8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdXNlJTIwY2l0eXxlbnwwfDF8MHx8fDI%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1564102590211-99ad647924f8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdXNlJTIwY2l0eXxlbnwwfDF8MHx8fDI%3D" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 6-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVhbCUyMGVzdGF0ZXxlbnwwfDB8MHx8fDI%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVhbCUyMGVzdGF0ZXxlbnwwfDB8MHx8fDI%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVhbCUyMGVzdGF0ZXxlbnwwfDB8MHx8fDI%3D" alt="gallery" width="630" height="400">
+                </picture>
+            </div>
+            <!--Gallery 2-->
+            <div class="cs-gallery cs-hidden" data-category="two">
+                <!--Picture 4-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1706808849827-7366c098b317?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1706808849827-7366c098b317?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1706808849827-7366c098b317?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 2-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1617365210284-aeae91b10483?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bHV4dXJ5JTIwaG9tZXxlbnwwfDF8MHx8fDI%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1617365210284-aeae91b10483?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bHV4dXJ5JTIwaG9tZXxlbnwwfDF8MHx8fDI%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1617365210284-aeae91b10483?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bHV4dXJ5JTIwaG9tZXxlbnwwfDF8MHx8fDI%3D" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 3-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1561027509-ec65ce5574f9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bHV4dXJ5JTIwaG9tZXxlbnwwfDF8MHx8fDI%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1561027509-ec65ce5574f9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bHV4dXJ5JTIwaG9tZXxlbnwwfDF8MHx8fDI%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1561027509-ec65ce5574f9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bHV4dXJ5JTIwaG9tZXxlbnwwfDF8MHx8fDI%3D" alt="gallery" width="630" height="400">
+                </picture>
+                <!--Picture 4-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1561026000-94e070de0909?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bHV4dXJ5JTIwaG9tZXxlbnwwfDF8MHx8fDI%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1561026000-94e070de0909?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bHV4dXJ5JTIwaG9tZXxlbnwwfDF8MHx8fDI%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1561026000-94e070de0909?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bHV4dXJ5JTIwaG9tZXxlbnwwfDF8MHx8fDI%3D" alt="gallery" width="630" height="400">
+                </picture>
+                <!--Picture 5-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1561026554-29d9815d4f3d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGx1eHVyeSUyMGhvbWV8ZW58MHwxfDB8fHwy">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1561026554-29d9815d4f3d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGx1eHVyeSUyMGhvbWV8ZW58MHwxfDB8fHwy">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1561026554-29d9815d4f3d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGx1eHVyeSUyMGhvbWV8ZW58MHwxfDB8fHwy" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 6-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdXNlfGVufDB8MHwwfHx8Mg%3D%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdXNlfGVufDB8MHwwfHx8Mg%3D%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdXNlfGVufDB8MHwwfHx8Mg%3D%3D" alt="gallery" width="305" height="400">
+                </picture>
+            </div>
+            <!--Gallery 3-->
+            <div class="cs-gallery cs-hidden" data-category="three">
+                <!--Picture 1-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1584738766473-61c083514bf4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHN1YnVyYmFuJTIwaG9tZXxlbnwwfDB8MHx8fDI%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1584738766473-61c083514bf4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHN1YnVyYmFuJTIwaG9tZXxlbnwwfDB8MHx8fDI%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1584738766473-61c083514bf4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHN1YnVyYmFuJTIwaG9tZXxlbnwwfDB8MHx8fDI%3D" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 2-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1675747158954-ebaa41b00466?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHN1YnVyYmFuJTIwaG9tZXxlbnwwfDF8MHx8fDI%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1675747158954-ebaa41b00466?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHN1YnVyYmFuJTIwaG9tZXxlbnwwfDF8MHx8fDI%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1675747158954-ebaa41b00466?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHN1YnVyYmFuJTIwaG9tZXxlbnwwfDF8MHx8fDI%3D" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 3-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1532512952857-15b2a96b3104?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHN1YnVyYmFuJTIwaG9tZXxlbnwwfDF8MHx8fDI%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1532512952857-15b2a96b3104?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHN1YnVyYmFuJTIwaG9tZXxlbnwwfDF8MHx8fDI%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1532512952857-15b2a96b3104?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHN1YnVyYmFuJTIwaG9tZXxlbnwwfDF8MHx8fDI%3D" alt="gallery" width="630" height="400">
+                </picture>
+                <!--Picture 4-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1517685025977-5839072a34ab?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3VidXJiYW4lMjBob21lfGVufDB8MXwwfHx8Mg%3D%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1517685025977-5839072a34ab?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3VidXJiYW4lMjBob21lfGVufDB8MXwwfHx8Mg%3D%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1517685025977-5839072a34ab?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3VidXJiYW4lMjBob21lfGVufDB8MXwwfHx8Mg%3D%3D" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 5-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1560026301-88340cf16be7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHN1YnVyYmFuJTIwaG91c2V8ZW58MHwxfDB8fHwy">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1560026301-88340cf16be7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHN1YnVyYmFuJTIwaG91c2V8ZW58MHwxfDB8fHwy">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1560026301-88340cf16be7?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHN1YnVyYmFuJTIwaG91c2V8ZW58MHwxfDB8fHwy" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 6-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1494526585095-c41746248156?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHN1YnVyYmFuJTIwaG91c2V8ZW58MHx8MHx8fDI%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1494526585095-c41746248156?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHN1YnVyYmFuJTIwaG91c2V8ZW58MHx8MHx8fDI%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHN1YnVyYmFuJTIwaG91c2V8ZW58MHx8MHx8fDI%3D" alt="gallery" width="630" height="400">
+                </picture>
+            </div>
+            <!--Gallery 4-->
+            <div class="cs-gallery cs-hidden" data-category="four">
+                <!--Picture 1-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1459535653751-d571815e906b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNpdHklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1459535653751-d571815e906b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNpdHklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1459535653751-d571815e906b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNpdHklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D" alt="gallery" width="630" height="400">
+                </picture>
+                <!--Picture 2-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1517736996303-4eec4a66bb17?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNpdHklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1517736996303-4eec4a66bb17?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNpdHklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1517736996303-4eec4a66bb17?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNpdHklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 3-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1505819244306-ef53954f9648?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2l0eSUyMGhvbWVzfGVufDB8fDB8fHwy">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1505819244306-ef53954f9648?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2l0eSUyMGhvbWVzfGVufDB8fDB8fHwy">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1505819244306-ef53954f9648?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2l0eSUyMGhvbWVzfGVufDB8fDB8fHwy" alt="gallery" width="630" height="400">
+                </picture>
+                <!--Picture 4-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1516203709415-9d4bd0d5ce18?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTd8fGNpdHklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1516203709415-9d4bd0d5ce18?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTd8fGNpdHklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1516203709415-9d4bd0d5ce18?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTd8fGNpdHklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 5-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1695121442624-407d35e33242?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjMxfHxjaXR5JTIwaG9tZXN8ZW58MHx8MHx8fDI%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1695121442624-407d35e33242?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjMxfHxjaXR5JTIwaG9tZXN8ZW58MHx8MHx8fDI%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1695121442624-407d35e33242?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjMxfHxjaXR5JTIwaG9tZXN8ZW58MHx8MHx8fDI%3D" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 6-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1528161868439-f4f8d5e1e59e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAxfHxjaXR5JTIwaG9tZXN8ZW58MHx8MHx8fDI%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1528161868439-f4f8d5e1e59e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAxfHxjaXR5JTIwaG9tZXN8ZW58MHx8MHx8fDI%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1528161868439-f4f8d5e1e59e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAxfHxjaXR5JTIwaG9tZXN8ZW58MHx8MHx8fDI%3D" alt="gallery" width="305" height="400">
+                </picture>
+            </div>
+            <!--Gallery 5-->
+            <div class="cs-gallery cs-hidden" data-category="five">
+                <!--Picture 1-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1672713775802-ae0810b49ffe?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y291bnRyeSUyMGhvbWVzfGVufDB8fDB8fHwy">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1672713775802-ae0810b49ffe?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y291bnRyeSUyMGhvbWVzfGVufDB8fDB8fHwy">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1672713775802-ae0810b49ffe?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y291bnRyeSUyMGhvbWVzfGVufDB8fDB8fHwy" alt="gallery" width="630" height="400">
+                </picture>
+                <!--Picture 2-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1603713197478-8a1538ff32dc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGNvdW50cnklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1603713197478-8a1538ff32dc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGNvdW50cnklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1603713197478-8a1538ff32dc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGNvdW50cnklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 3-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1680196162856-c7898c8659b4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fGNvdW50cnklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1680196162856-c7898c8659b4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fGNvdW50cnklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1680196162856-c7898c8659b4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fGNvdW50cnklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 4-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1595521624992-48a59aef95e3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fGNvdW50cnklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1595521624992-48a59aef95e3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fGNvdW50cnklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1595521624992-48a59aef95e3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fGNvdW50cnklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 5-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1716811882512-9094c2195af3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fGNvdW50cnklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1716811882512-9094c2195af3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fGNvdW50cnklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1716811882512-9094c2195af3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fGNvdW50cnklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D" alt="gallery" width="305" height="400">
+                </picture>
+                <!--Picture 6-->
+                <picture class="cs-image">
+                    <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1530734218972-25a9391ccd8b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvdW50cnklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D">
+                    <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1530734218972-25a9391ccd8b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvdW50cnklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D">
+                    <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1530734218972-25a9391ccd8b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvdW50cnklMjBob21lc3xlbnwwfHwwfHx8Mg%3D%3D" alt="gallery" width="630" height="400">
+                </picture>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Reviews                     -->
+    <!-- ============================================ -->
+
+    <section id="reviews-566">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Reviews</span>
+                <h2 class="cs-title">What Our Clients Say</h2>
+                <p class="cs-text">
+                    Vitae ultricies leo integer malesuada nunc vel. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Viverra aliquet eget sit amet tellus cras adipiscing. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <!--Blue Quote-->
+                    <img class="cs-stars" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/stars3.svg" decoding="async" alt="quote icon" width="189" height="24">
+                    <p class="cs-item-text">
+                        Curabitur vitae nunc sed velit dignissim sodales ut. Maecenas ultricies mi eget mauris pharetra et. Et ligula ullamcorper malesuada proin pellentesque diam volutpat commodo.
+                    </p>
+                    <div class="cs-flex-group">
+                        <picture class="cs-picture">
+                            <img class="cs-profile" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                        </picture>
+                        <span class="cs-name">
+                            Vera Robinson
+                            <span class="cs-job">Psychologist</span>
+                        </span>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <!--Blue Quote-->
+                    <img class="cs-stars" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/stars3.svg" decoding="async" alt="quote icon" width="189" height="24">
+                    <p class="cs-item-text">
+                        Curabitur vitae nunc sed velit dignissim sodales ut. Maecenas ultricies mi eget mauris pharetra et. Et ligula ullamcorper malesuada proin pellentesque diam volutpat commodo
+                    </p>
+                    <div class="cs-flex-group">
+                        <picture class="cs-picture">
+                            <img class="cs-profile" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                        </picture>
+                        <span class="cs-name">
+                            Benjamin Norris
+                            <span class="cs-job">Business analyst</span>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+                                
+    <!-- ============================================ -->
+    <!--                Meet The Team                 -->
+    <!-- ============================================ -->
+
+    <section id="meet-team-977">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Team</span>
+                <h2 class="cs-title">Our Expert Team Members</h2>
+                <p class="cs-text">
+                    At Dream Home Real Estate, we strive to give the best experience and service to every client that walks in the door. Meet the team members that make it all possible.
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/stylist1.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/stylist1.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/stylist1.jpg" alt="stylist" width="320" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-name">Esther Howard</span>
+                        <span class="cs-job">Real Estate Agent</span>
+                        <div class="cs-social-group">
+                            <a href="" class="cs-link" aria-label="visit linkedin">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/linkedin-gold.svg" alt="linkedin" width="12" height="12">
+                            </a>
+                            <a href="" class="cs-link" aria-label="visit twitter">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-gold.svg" alt="twitter" width="12" height="12">
+                            </a>
+                            <a href="" class="cs-link" aria-label="visit instragram">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-gold.svg" alt="instragram" width="12" height="12">
+                            </a>
+                            <a href="" class="cs-link" aria-label="visit youtube">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-gold.svg" alt="youtube" width="12" height="12">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/stylist2.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/stylist2.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/stylist2.jpg" alt="stylist" width="320" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-name">Jenny Wilson</span>
+                        <span class="cs-job">Real Estate Agent</span>
+                        <div class="cs-social-group">
+                            <a href="" class="cs-link" aria-label="visit linkedin">
+                                <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/linkedin-gold.svg" alt="linkedin" width="12" height="12">
+                            </a>
+                            <a href="" class="cs-link" aria-label="visit twitter">
+                                <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-gold.svg" alt="twitter" width="12" height="12">
+                            </a>
+                            <a href="" class="cs-link" aria-label="visit instragram">
+                                <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-gold.svg" alt="instragram" width="12" height="12">
+                            </a>
+                            <a href="" class="cs-link" aria-label="visit youtube">
+                                <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-gold.svg" alt="youtube" width="12" height="12">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/stylist3.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/stylist3.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/stylist3.jpg" alt="stylist" width="320" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-name">Leslie Alexander</span>
+                        <span class="cs-job">Real Estate Agent</span>
+                        <div class="cs-social-group">
+                            <a href="" class="cs-link" aria-label="visit linkedin">
+                                <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/linkedin-gold.svg" alt="linkedin" width="12" height="12">
+                            </a>
+                            <a href="" class="cs-link" aria-label="visit twitter">
+                                <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-gold.svg" alt="twitter" width="12" height="12">
+                            </a>
+                            <a href="" class="cs-link" aria-label="visit instragram">
+                                <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-gold.svg" alt="instragram" width="12" height="12">
+                            </a>
+                            <a href="" class="cs-link" aria-label="visit youtube">
+                                <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-gold.svg" alt="youtube" width="12" height="12">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/stylist4.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/stylist4.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/stylist4.jpg" alt="stylist" width="320" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-name">Jane Cooper</span>
+                        <span class="cs-job">Real Estate Agent</span>
+                        <div class="cs-social-group">
+                            <a href="" class="cs-link" aria-label="visit linkedin">
+                                <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/linkedin-gold.svg" alt="linkedin" width="12" height="12">
+                            </a>
+                            <a href="" class="cs-link" aria-label="visit twitter">
+                                <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-gold.svg" alt="twitter" width="12" height="12">
+                            </a>
+                            <a href="" class="cs-link" aria-label="visit instragram">
+                                <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-gold.svg" alt="instragram" width="12" height="12">
+                            </a>
+                            <a href="" class="cs-link" aria-label="visit youtube">
+                                <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-gold.svg" alt="youtube" width="12" height="12">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+                                
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-274">
+        <div class="cs-container">
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <!-- Remove the light class if you don't need the dark logo -->
+                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Footer/logo.svg" alt="logo" width="240" height="32">
+                </a>
+                <div class="cs-social">
+                    <a class="cs-social-link" aria-label="visit google profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                    </a>
+                </div>
+            </div>
+            <!-- Links -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Contact</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="tel:123-456 7890">(123) 456 7890</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="mailto:info@codestitch.com">info@codestitch.com</a>
+                </li>
+            </ul>
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Address</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">123 Avenue Street<br> Oak Harbor, WA 98101</a>
+                </li>
+            </ul>
+            <!-- Contact Info -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Opening Hours</span>
+                </li>
+                <li class="cs-nav-li">
+                    Tuesday, Thursday, Friday: 9am-6pm
+                </li>
+                <li class="cs-nav-li">
+                    ​(closed for lunch 12pm-2pm)
+                </li>
+            </ul>
+        </div>
+    </footer>
+                                
+                                
+    <script src="script.js"></script>                                                        
+</body>
+</html>
